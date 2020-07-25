@@ -1,0 +1,54 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="LidomaCard.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="p1x" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">14</Value>
+    </Setting>
+    <Setting Name="p1y" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">34</Value>
+    </Setting>
+    <Setting Name="p1w" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">382</Value>
+    </Setting>
+    <Setting Name="p1h" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">242</Value>
+    </Setting>
+    <Setting Name="p2x" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">418</Value>
+    </Setting>
+    <Setting Name="p2y" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">34</Value>
+    </Setting>
+    <Setting Name="p2w" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">382</Value>
+    </Setting>
+    <Setting Name="p2h" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">242</Value>
+    </Setting>
+    <Setting Name="p3x" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">14</Value>
+    </Setting>
+    <Setting Name="p3y" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">283</Value>
+    </Setting>
+    <Setting Name="p3w" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">382</Value>
+    </Setting>
+    <Setting Name="p3h" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">242</Value>
+    </Setting>
+    <Setting Name="p4x" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">418</Value>
+    </Setting>
+    <Setting Name="p4y" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">283</Value>
+    </Setting>
+    <Setting Name="p4w" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">382</Value>
+    </Setting>
+    <Setting Name="p4h" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">242</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

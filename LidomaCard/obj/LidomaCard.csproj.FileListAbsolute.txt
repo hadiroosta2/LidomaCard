@@ -1,0 +1,10 @@
+C:\Users\administrator.PERSIAGROUP\Documents\Visual Studio 2005\Projects\LidomaCard\LidomaCard\obj\Debug\LidomaCard.exe
+C:\Users\administrator.PERSIAGROUP\Documents\Visual Studio 2005\Projects\LidomaCard\LidomaCard\obj\Debug\LidomaCard.pdb
+C:\Users\administrator.PERSIAGROUP\Documents\Visual Studio 2005\Projects\LidomaCard\LidomaCard\bin\Debug\LidomaCard.exe
+C:\Users\administrator.PERSIAGROUP\Documents\Visual Studio 2005\Projects\LidomaCard\LidomaCard\bin\Debug\LidomaCard.pdb
+C:\Users\administrator.PERSIAGROUP\Documents\Visual Studio 2005\Projects\LidomaCard\LidomaCard\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\administrator.PERSIAGROUP\Documents\Visual Studio 2005\Projects\LidomaCard\LidomaCard\obj\Debug\LidomaCard.Properties.Resources.resources
+C:\Users\administrator.PERSIAGROUP\Documents\Visual Studio 2005\Projects\LidomaCard\LidomaCard\obj\Debug\LidomaCard.csproj.GenerateResource.Cache
+C:\Users\administrator.PERSIAGROUP\Documents\Visual Studio 2005\Projects\LidomaCard\LidomaCard\obj\Debug\LidomaCard.frmMain.resources
+C:\Users\administrator.PERSIAGROUP\Documents\Visual Studio 2005\Projects\LidomaCard\LidomaCard\obj\Debug\LidomaCard.frmHelp.resources
+C:\Users\administrator.PERSIAGROUP\Documents\Visual Studio 2005\Projects\LidomaCard\LidomaCard\bin\Debug\LidomaCard.exe.config
