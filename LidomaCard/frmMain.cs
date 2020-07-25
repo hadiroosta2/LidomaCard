@@ -257,6 +257,10 @@ namespace LidomaCard
 
         private void setImage()
         {
+            pictureBox1.BackgroundImage = null;
+            pictureBox2.BackgroundImage = null;
+            pictureBox3.BackgroundImage = null;
+            pictureBox4.BackgroundImage = null;
             if (imageFiles.Count > index)
                 pictureBox1.BackgroundImage = Image.FromFile(imageFiles[index]);
             if (imageFiles.Count > index + 1)
