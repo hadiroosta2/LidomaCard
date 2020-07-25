@@ -37,6 +37,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmExcelTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmExcelTable.Designer.cs">
+      <DependentUpon>frmExcelTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmHelp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -51,6 +57,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmExcelTable.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmExcelTable.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmHelp.resx">
       <SubType>Designer</SubType>
       <DependentUpon>frmHelp.cs</DependentUpon>

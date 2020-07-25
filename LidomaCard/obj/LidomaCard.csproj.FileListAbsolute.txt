@@ -8,3 +8,4 @@ C:\Users\administrator.PERSIAGROUP\Documents\Visual Studio 2005\Projects\LidomaC
 C:\Users\administrator.PERSIAGROUP\Documents\Visual Studio 2005\Projects\LidomaCard\LidomaCard\obj\Debug\LidomaCard.frmMain.resources
 C:\Users\administrator.PERSIAGROUP\Documents\Visual Studio 2005\Projects\LidomaCard\LidomaCard\obj\Debug\LidomaCard.frmHelp.resources
 C:\Users\administrator.PERSIAGROUP\Documents\Visual Studio 2005\Projects\LidomaCard\LidomaCard\bin\Debug\LidomaCard.exe.config
+C:\Users\administrator.PERSIAGROUP\Documents\Visual Studio 2005\Projects\LidomaCard\LidomaCard\obj\Debug\LidomaCard.frmExcelTable.resources

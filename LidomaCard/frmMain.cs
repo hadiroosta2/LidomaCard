@@ -414,6 +414,8 @@ namespace LidomaCard
                     MessageBox.Show("Please choose .xls or .xlsx file only.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Error);//custom messageBox to show error
                 }
             }
+            frmExcelTable frmExcel = new frmExcelTable(dtExcel);
+            frmExcel.ShowDialog();
         }
     }
 }
