@@ -15,7 +15,15 @@ namespace LidomaCard
        
         public override void draw(Graphics g)
         {
-            g.DrawRectangle(Pens.Red, left, top, width, height);
+            if (active)
+            {
+                g.DrawRectangle(Pens.Red, left, top, width, height);
+            }
+            else
+            {
+                g.DrawRectangle(Pens.Black, left, top, width, height);
+            }
+            
             g.DrawString(text, new Font("tahoma", 12), new SolidBrush(Color.Black), left, top);
         }
     }

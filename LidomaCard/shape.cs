@@ -12,6 +12,7 @@ namespace LidomaCard
         public int top;
         public float width;
         public float height;
+        public bool active;
         public shape()
         {
             text = "";
@@ -19,6 +20,7 @@ namespace LidomaCard
             top = 0;
             width = 100;
             height = 30;
+            active = false;
         }
         public virtual void draw(Graphics g)
         {

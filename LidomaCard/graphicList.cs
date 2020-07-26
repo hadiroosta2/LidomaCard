@@ -13,10 +13,26 @@ namespace LidomaCard
         {
             glist = new List<shape>();
         }
+        public void selectAll()
+        {
+            foreach (shape s in glist)
+            {
+                s.active = true;
+            }
+        }
+        public void unSelectAll()
+        {
+            foreach (shape s in glist)
+            {
+                s.active = false;
+            }
+        }
         public void add(shape s)
         {
+            unSelectAll();
+            s.active = true;
             glist.Add(s);
-            activeShape = s;
+           
         }
         public void remove()
         {
