@@ -22,12 +22,20 @@ namespace LidomaCard
         PrintDocument pd;
         DataTable dtExcel;
         List<string> imageFiles;
+        graphicList gl;
         public frmMain()
         {
             InitializeComponent();
+            gl = new graphicList();
             
         }
-
+        private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+            {
+                key = true;
+            }
+        }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             active = (PictureBox)sender;
@@ -36,15 +44,10 @@ namespace LidomaCard
                 active.BackgroundImage = null;
                 key = false;
             }
-            //else
-            //{
-
             numericUpDown1.Value = Convert.ToInt32(active.Width );
             numericUpDown2.Value = Convert.ToInt32(active.Height );
             numericUpDown3.Value = Convert.ToInt32(active.Left );
             numericUpDown4.Value = Convert.ToInt32(active.Top );
-               
-            //}
             this.Refresh();
             
         }
@@ -66,16 +69,9 @@ namespace LidomaCard
                 Graphics g = this.CreateGraphics();
               //  g.PageUnit = GraphicsUnit.Millimeter;
                 g.DrawRectangle(new Pen(new SolidBrush(Color.Red), 4), new Rectangle(active.Location.X, active.Location.Y, active.Size.Width, active.Size.Height));
+               
             }
           
-        }
-
-        private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Right)
-            {
-                key = true;
-            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -257,6 +253,10 @@ namespace LidomaCard
 
         private void setImage()
         {
+            pictureBox1.BackgroundImage = null;
+            pictureBox2.BackgroundImage = null;
+            pictureBox3.BackgroundImage = null;
+            pictureBox4.BackgroundImage = null;
             if (imageFiles.Count > index)
                 pictureBox1.BackgroundImage = Image.FromFile(imageFiles[index]);
             if (imageFiles.Count > index + 1)
@@ -416,6 +416,26 @@ namespace LidomaCard
             }
             frmExcelTable frmExcel = new frmExcelTable(dtExcel);
             frmExcel.ShowDialog();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            textLable tl = new textLable();
+            tl.text = "persia";
+            gl.add(tl);
+            Refresh();
+        }
+
+        private void pictureBox1_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics g = e.Graphics;
+            gl.draw(g);
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            gl.remove();
+            Refresh();
         }
         
     }

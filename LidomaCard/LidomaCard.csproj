@@ -55,6 +55,9 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="graphicList.cs" />
+    <Compile Include="shape.cs" />
+    <Compile Include="textLable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmExcelTable.resx">
