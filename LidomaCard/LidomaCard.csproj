@@ -37,6 +37,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="drawArea.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="drawArea.Designer.cs">
+      <DependentUpon>drawArea.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmExcelTable.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -55,11 +61,21 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmMain0.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain0.Designer.cs">
+      <DependentUpon>frmMain0.cs</DependentUpon>
+    </Compile>
     <Compile Include="graphicList.cs" />
     <Compile Include="shape.cs" />
     <Compile Include="textLable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="drawArea.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>drawArea.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmExcelTable.resx">
       <SubType>Designer</SubType>
       <DependentUpon>frmExcelTable.cs</DependentUpon>
@@ -71,6 +87,10 @@
     <EmbeddedResource Include="frmMain.resx">
       <SubType>Designer</SubType>
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain0.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmMain0.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

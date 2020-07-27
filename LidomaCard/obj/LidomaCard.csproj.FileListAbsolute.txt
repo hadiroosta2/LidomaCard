@@ -20,3 +20,5 @@ D:\my project\LidomaCard\LidomaCard\obj\Debug\LidomaCard.frmHelp.resources
 D:\my project\LidomaCard\LidomaCard\obj\Debug\LidomaCard.frmMain.resources
 D:\my project\LidomaCard\LidomaCard\obj\Debug\LidomaCard.Properties.Resources.resources
 D:\my project\LidomaCard\LidomaCard\obj\Debug\LidomaCard.csproj.GenerateResource.Cache
+C:\Users\administrator.PERSIAGROUP\Documents\Visual Studio 2005\Projects\LidomaCard\LidomaCard\obj\Debug\LidomaCard.frmMain0.resources
+C:\Users\administrator.PERSIAGROUP\Documents\Visual Studio 2005\Projects\LidomaCard\LidomaCard\obj\Debug\LidomaCard.drawArea.resources
