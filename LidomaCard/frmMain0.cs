@@ -34,6 +34,7 @@ namespace LidomaCard
             drawArea1.Width = fcs.DAwidth;
             drawArea1.Height = fcs.DAheight;
             drawArea1.Refresh();
+            setControls();
         }
         void pd_PrintPage(object sender, PrintPageEventArgs e)
         {
@@ -147,11 +148,23 @@ namespace LidomaCard
                 drawArea1.Refresh();
             }
         }
-
-        private void frmMain0_Load(object sender, EventArgs e)
+        private void setControls()
         {
             drawArea1.Left = 20;
             drawArea1.Top = 20;
+            hRuler.Top = 0;
+            hRuler.Left = 20;
+            hRuler.StartValue = 0;
+            vRuler.Top = 20;
+            vRuler.Left = 0;
+            vRuler.StartValue = 0;
+            hRuler.Width = this.Width;
+            vRuler.Height = this.Height;
+        }
+        private void frmMain0_Load(object sender, EventArgs e)
+        {
+
+            setControls();
         }
     }
 }
