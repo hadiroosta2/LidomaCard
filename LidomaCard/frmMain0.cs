@@ -147,5 +147,11 @@ namespace LidomaCard
                 drawArea1.Refresh();
             }
         }
+
+        private void frmMain0_Load(object sender, EventArgs e)
+        {
+            drawArea1.Left = 20;
+            drawArea1.Top = 20;
+        }
     }
 }

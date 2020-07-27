@@ -28,6 +28,17 @@ namespace LidomaCard
         {
             numericUpDown1.Value = DAwidth;
             numericUpDown2.Value = DAheight;
+            numericUpDown1.Select(0, 10);
+        }
+
+        private void numericUpDown1_Enter(object sender, EventArgs e)
+        {
+            numericUpDown1.Select(0, 10);
+        }
+
+        private void numericUpDown2_Enter(object sender, EventArgs e)
+        {
+            numericUpDown2.Select(0, 10);
         }
     }
 }
