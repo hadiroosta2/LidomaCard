@@ -121,6 +121,29 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="payments1.ico" />
+    <None Include="Resources\Serial.bmp" />
+    <None Include="Resources\new.bmp" />
+    <None Include="Resources\Log.bmp" />
+    <None Include="Resources\itemcard.bmp" />
+    <None Include="Resources\Export.bmp" />
+    <None Include="Resources\Add.bmp" />
+    <None Include="Resources\Connectiontest1.bmp" />
+    <None Include="Resources\save.bmp" />
+    <None Include="Resources\print.bmp" />
+    <None Include="Resources\postgl.bmp" />
+    <None Include="Resources\Open.bmp" />
+    <None Include="Resources\ok.bmp" />
+    <None Include="Resources\next_st.bmp" />
+    <None Include="Resources\next.bmp" />
+    <None Include="Resources\last.bmp" />
+    <None Include="Resources\help.bmp" />
+    <None Include="Resources\excel.bmp" />
+    <None Include="Resources\edit.bmp" />
+    <None Include="Resources\duplicate.bmp" />
+    <None Include="Resources\Connectiontest.bmp" />
+    <None Include="Resources\AddReoprt.bmp" />
+    <None Include="Resources\close.bmp" />
+    <None Include="Resources\global1.ico" />
     <None Include="Resources\open1.ico" />
     <None Include="Resources\File1.ico" />
     <None Include="Resources\exel2.png" />
