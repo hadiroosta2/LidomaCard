@@ -6,7 +6,6 @@ C:\Users\administrator.PERSIAGROUP\Documents\Visual Studio 2005\Projects\LidomaC
 C:\Users\administrator.PERSIAGROUP\Documents\Visual Studio 2005\Projects\LidomaCard\LidomaCard\obj\Debug\LidomaCard.Properties.Resources.resources
 C:\Users\administrator.PERSIAGROUP\Documents\Visual Studio 2005\Projects\LidomaCard\LidomaCard\obj\Debug\LidomaCard.csproj.GenerateResource.Cache
 C:\Users\administrator.PERSIAGROUP\Documents\Visual Studio 2005\Projects\LidomaCard\LidomaCard\obj\Debug\LidomaCard.frmMain.resources
-C:\Users\administrator.PERSIAGROUP\Documents\Visual Studio 2005\Projects\LidomaCard\LidomaCard\obj\Debug\LidomaCard.frmHelp.resources
 C:\Users\administrator.PERSIAGROUP\Documents\Visual Studio 2005\Projects\LidomaCard\LidomaCard\bin\Debug\LidomaCard.exe.config
 C:\Users\administrator.PERSIAGROUP\Documents\Visual Studio 2005\Projects\LidomaCard\LidomaCard\obj\Debug\LidomaCard.frmExcelTable.resources
 D:\my project\LidomaCard\LidomaCard\bin\Debug\LidomaCard.exe.config
@@ -22,3 +21,4 @@ D:\my project\LidomaCard\LidomaCard\obj\Debug\LidomaCard.Properties.Resources.re
 D:\my project\LidomaCard\LidomaCard\obj\Debug\LidomaCard.csproj.GenerateResource.Cache
 C:\Users\administrator.PERSIAGROUP\Documents\Visual Studio 2005\Projects\LidomaCard\LidomaCard\obj\Debug\LidomaCard.frmMain0.resources
 C:\Users\administrator.PERSIAGROUP\Documents\Visual Studio 2005\Projects\LidomaCard\LidomaCard\obj\Debug\LidomaCard.drawArea.resources
+C:\Users\administrator.PERSIAGROUP\Documents\Visual Studio 2005\Projects\LidomaCard\LidomaCard\obj\Debug\LidomaCard.frmCardSetting.resources

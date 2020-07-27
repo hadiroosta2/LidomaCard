@@ -19,5 +19,11 @@ namespace LidomaCard
         {
 
         }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            frmCardSetting fcs = new frmCardSetting();
+            fcs.ShowDialog();
+        }
     }
 }

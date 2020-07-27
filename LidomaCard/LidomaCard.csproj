@@ -49,11 +49,11 @@
     <Compile Include="frmExcelTable.Designer.cs">
       <DependentUpon>frmExcelTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmHelp.cs">
+    <Compile Include="frmCardSetting.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmHelp.Designer.cs">
-      <DependentUpon>frmHelp.cs</DependentUpon>
+    <Compile Include="frmCardSetting.Designer.cs">
+      <DependentUpon>frmCardSetting.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
@@ -80,9 +80,9 @@
       <SubType>Designer</SubType>
       <DependentUpon>frmExcelTable.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmHelp.resx">
+    <EmbeddedResource Include="frmCardSetting.resx">
       <SubType>Designer</SubType>
-      <DependentUpon>frmHelp.cs</DependentUpon>
+      <DependentUpon>frmCardSetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <SubType>Designer</SubType>
@@ -121,6 +121,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="payments1.ico" />
+    <None Include="Resources\Normal.bmp" />
     <None Include="Resources\Serial.bmp" />
     <None Include="Resources\new.bmp" />
     <None Include="Resources\Log.bmp" />

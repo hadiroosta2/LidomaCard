@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace LidomaCard
 {
-    public partial class frmHelp : Form
+    public partial class frmCardSetting : Form
     {
-        public frmHelp()
+        public frmCardSetting()
         {
             InitializeComponent();
         }

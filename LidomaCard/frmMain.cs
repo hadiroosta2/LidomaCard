@@ -128,7 +128,7 @@ namespace LidomaCard
 
         private void —«Â„ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmHelp help = new frmHelp();
+            frmCardSetting help = new frmCardSetting();
             help.ShowDialog();
         }
 
