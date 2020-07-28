@@ -10,20 +10,31 @@ namespace LidomaCard
 {
     public partial class drawArea : UserControl
     {
-      public Image bImage;
+        public Image bImage;
+        graphicList gl;
         public drawArea()
         {
             InitializeComponent();
+            gl = new graphicList();
             bImage = null;
         }
-
+        public void add(shape s)
+        {
+            gl.add(s);
+            this.Refresh();
+        }
         private void drawArea_Paint(object sender, PaintEventArgs e)
         {
+            Graphics g = e.Graphics;
             if (bImage != null)
             {
-                Graphics g = e.Graphics;
+                
                 g.DrawImage(bImage, 0, 0,this.Width,this.Height);
             }
+            //foreach (shape s in gl)
+            //{
+            //    s.draw(g);
+            //}
            
         }
     }

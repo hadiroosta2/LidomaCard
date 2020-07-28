@@ -5,7 +5,7 @@ using System.Drawing;
 
 namespace LidomaCard
 {
-    class graphicList
+   public class graphicList
     {
         List<shape> glist;
         public shape activeShape;
@@ -39,12 +39,15 @@ namespace LidomaCard
             glist.RemoveAt(glist.Count - 1);
             activeShape = null;
         }
-        public void draw(Graphics g)
-        {
-            foreach (shape s in glist)
-            {
-                s.draw(g);
-            }
-        }
+       public void draw(Graphics g)
+       {
+           //foreach (shape s in glist)
+           //{
+           //    s.draw(g);
+           //}
+       }
+      
+
+
     }
 }

@@ -5,7 +5,7 @@ using System.Drawing;
 
 namespace LidomaCard
 {
-    class shape
+  public class shape
     {
         public string text;
         public int left;
