@@ -36,7 +36,7 @@ namespace LidomaCard
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Name = "drawArea";
-            this.Size = new System.Drawing.Size(182, 205);
+            this.Size = new System.Drawing.Size(228, 205);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.drawArea_Paint);
             this.ResumeLayout(false);
 
