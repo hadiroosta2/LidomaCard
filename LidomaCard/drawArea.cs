@@ -10,13 +10,27 @@ namespace LidomaCard
 {
     public partial class drawArea : UserControl
     {
+        private const int CS_DROPSHADOW = 0x00020000;
         public Image bImage;
         graphicList gl;
         public drawArea()
         {
             InitializeComponent();
+            SetStyle(ControlStyles.DoubleBuffer, true);
+            UpdateStyles();
             gl = new graphicList();
             bImage = null;
+        }
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                // add the drop shadow flag for automatically drawing
+                // a drop shadow around the form
+                CreateParams cp = base.CreateParams;
+                cp.ClassStyle |= CS_DROPSHADOW;
+                return cp;
+            }
         }
         public void add(shape s)
         {
@@ -25,6 +39,7 @@ namespace LidomaCard
         }
         private void drawArea_Paint(object sender, PaintEventArgs e)
         {
+            
             Graphics g = e.Graphics;
             if (bImage != null)
             {
