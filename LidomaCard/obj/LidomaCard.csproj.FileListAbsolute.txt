@@ -25,3 +25,11 @@ C:\Users\administrator.PERSIAGROUP\Documents\Visual Studio 2005\Projects\LidomaC
 D:\my project\LidomaCard\LidomaCard\obj\Debug\LidomaCard.drawArea.resources
 D:\my project\LidomaCard\LidomaCard\obj\Debug\LidomaCard.frmCardSetting.resources
 D:\my project\LidomaCard\LidomaCard\obj\Debug\LidomaCard.frmMain0.resources
+D:\my project\LidomaCard\LidomaCard\obj\Release\ResolveAssemblyReference.cache
+D:\my project\LidomaCard\LidomaCard\obj\Release\LidomaCard.DrawArea.resources
+D:\my project\LidomaCard\LidomaCard\obj\Release\LidomaCard.frmExcelTable.resources
+D:\my project\LidomaCard\LidomaCard\obj\Release\LidomaCard.frmCardSetting.resources
+D:\my project\LidomaCard\LidomaCard\obj\Release\LidomaCard.frmMain.resources
+D:\my project\LidomaCard\LidomaCard\obj\Release\LidomaCard.frmMain0.resources
+D:\my project\LidomaCard\LidomaCard\obj\Release\LidomaCard.Properties.Resources.resources
+D:\my project\LidomaCard\LidomaCard\obj\Release\LidomaCard.csproj.GenerateResource.Cache

@@ -1,6 +1,6 @@
-namespace LidomaCard
+﻿namespace LidomaCard
 {
-    partial class drawArea
+    partial class DrawArea
     {
         /// <summary> 
         /// Required designer variable.
@@ -30,14 +30,18 @@ namespace LidomaCard
         {
             this.SuspendLayout();
             // 
-            // drawArea
+            // DrawArea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Name = "drawArea";
-            this.Size = new System.Drawing.Size(228, 205);
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.drawArea_Paint);
+            this.Name = "DrawArea";
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.DrawArea_Paint);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DrawArea_KeyDown);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.DrawArea_KeyPress);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.DrawArea_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.DrawArea_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.DrawArea_MouseUp);
             this.ResumeLayout(false);
 
         }

@@ -22,11 +22,11 @@ namespace LidomaCard
         PrintDocument pd;
         DataTable dtExcel;
         List<string> imageFiles;
-        graphicList gl;
+      
         public frmMain()
         {
             InitializeComponent();
-            gl = new graphicList();
+        //    gl = new graphicList();
             
         }
         private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
@@ -422,19 +422,19 @@ namespace LidomaCard
         {
             textLable tl = new textLable();
             tl.text = "persia";
-            gl.add(tl);
+        //    gl.add(tl);
             Refresh();
         }
 
         private void pictureBox1_Paint(object sender, PaintEventArgs e)
         {
             Graphics g = e.Graphics;
-            gl.draw(g);
+           // gl.draw(g);
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            gl.remove();
+         //   gl.remove();
             Refresh();
         }
         
