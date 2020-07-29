@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
 using System.Data;
-
 using System.Text;
 using System.Windows.Forms;
 using System.Runtime.Serialization.Formatters.Binary;
@@ -20,7 +19,7 @@ namespace LidomaCard
         Image img;
         ContextMenuStrip cm;
         frmMain0 owener;
-        Bitmap backImage;
+        Image backImage;
         //int imageWidth, imageHeight;
         public bool hasChenge ;
         float zoom = 1;
@@ -32,7 +31,9 @@ namespace LidomaCard
             this.DoubleBuffered = true;
             hasChenge = false;
             
+            
         }
+
         public void Initialize(frmMain0 owener)
         {
             try
@@ -58,6 +59,7 @@ namespace LidomaCard
                 zoom = value;
             }
         }
+
         protected override bool IsInputKey(Keys keyData)
         {
             if (keyData == Keys.Down || keyData == Keys.Up || keyData == Keys.Right || keyData == Keys.Left || keyData == Keys.F1)
@@ -217,10 +219,6 @@ namespace LidomaCard
             try
             {
                 img = Image.FromFile(ImagePath);
-                //ImageWidth = img.Width;
-                //ImageHeight = img.Height;
-
-
                 BackImage = new Bitmap(img, this.Width, this.Height);
                 this.Invalidate();
                
@@ -277,7 +275,7 @@ namespace LidomaCard
                 img = value;
             }
         }
-        public Bitmap BackImage
+        public Image BackImage
         {
             get
             {
@@ -415,7 +413,7 @@ namespace LidomaCard
 
         private void DrawArea_MouseMove(object sender, MouseEventArgs e)
         {
-          
+            
             //if (graphicList.SelectionCount > 0)
             //{
             //    foreach (drawBase o in GraphicList.selection)
@@ -462,6 +460,7 @@ namespace LidomaCard
         {
             lableCopy = (drawBase)activeObject.Clone();
         }
+
         public void DoPaste()
         {
             if (lableCopy != null)

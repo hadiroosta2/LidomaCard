@@ -10,40 +10,130 @@ namespace LidomaCard
     [Serializable]
     public abstract class drawBase : INotifyPropertyChanged,ICloneable
     {
-       
+        //متن که داخل شی نوشته میشود برای لیبل های متنی 
         string text;
+        //ایا عددی باشد یا به حروف برای لیبل های عددی 
         bool n2s = false;
+        //نوع فونت و سایز فونت و رنگ فونت 
         string fontName;
         float fontSize;
         Color fontColor;
+        bool boldFont = false;
+        bool fontItalic;
+        FontStyle style;
+        //تعداد صفر های قبل از عدد 
         int zeroNumber;
+        //اندازه طول و عرض شی
         private int width;
         private int height;
+        //موقعیت شی
         private int x, y;
+        // برای این که شی انتخاب شده است یا خیر
         private bool select;
+        //مقدار چرخش شی 
         protected int rotate;
+        //نقطه محور چرخش
         PointF rotatePoint;
+        //برای این که پشت زمینه شی شفاف باشد یا خیر
         bool transparent = false;
-        bool boldFont = false;
-        FontStyle style;
-       
+        //نوع فونت و اندازه فونت برای شی بارکد
+        string barcodeFontName;
+        int barcodeFontSize;
+        // نوع بارکد را مشخص میکند 
+        string barcodeType;
+        // متن بارکد را مشخص میکند 
+        string barcodeText;
+        // رنگ بکگراند و فورگراند بارکد را مشخص میکند 
+        Color backBar, forBar;
+        // مشخص میکند که متن بارکد نمایش داده شود یا خیر 
+        bool showBarText;
         int freeze, freezeLabelNumber;
         string freezeText;
-        string barcodeText;
-        Color backBar, forBar;
-        bool showBarText;
         bool whichObject;
-        string barcodeType;
         string logoImage;
         bool colorState;
         bool strAvi;
-        bool fontItalic;
         int alignment;
         bool doExport;
         bool reversed;
         bool mirror1, mirror2;
-        string barcodeFontName;
-        int barcodeFontSize;
+      
+        //  رویدادهای کنترل شی 
+        public virtual void print(DrawArea drawArea,Graphics g, int j,bool border)
+        {
+        }
+        public virtual void onKeyPress(DrawArea drawArea,KeyPressEventArgs e)
+        {
+
+        }
+        public virtual void OnMouseDown(DrawArea drawArea, MouseEventArgs e)
+        {
+
+        }
+        public virtual void OnMouseUp(DrawArea drawArea, MouseEventArgs e)
+        {
+
+        }
+        public virtual void OnMouseMove(DrawArea drawArea, MouseEventArgs e)
+        {
+
+        }
+        public virtual void OnKeyDown(DrawArea drawArea, KeyEventArgs e)
+        {
+
+        }
+        public virtual void Draw(DrawArea drawArea, System.Drawing.Graphics g, float zoom)
+        {
+
+        }
+
+        // متد برای این که روی شی کلیک شده است یا خیر
+        public virtual int HitTest(Point point)
+        {
+            return 1;
+        }
+
+        public virtual string name()
+        {
+            return "lodoma";
+        }
+        public object Clone()
+        {
+            return this.MemberwiseClone();
+
+        }
+
+        //جهت تراز بندی شی روی صفحه رسم 
+        #region aline
+        public void CenterScreenObject(DrawArea area)
+        {
+            X = area.Width / 2 - Width / 2;
+        }
+
+        public void RightScreenObject(DrawArea area)
+        {
+            X = area.Width - 30 - Width;
+        }
+
+        public void LeftScreenObject(DrawArea area)
+        {
+            X = 30;
+        }
+
+        #endregion
+
+        #region propertis
+
+
+        public int ObjectAlignment
+        {
+            get { return alignment; }
+            set
+            {
+                alignment = value;
+                InvokePropertyChanged(new PropertyChangedEventArgs("ObjectAlignment"));
+            }
+        }
 
         public int BarcodeFontSize
         {
@@ -102,16 +192,6 @@ namespace LidomaCard
             {
                 doExport = value;
                 InvokePropertyChanged(new PropertyChangedEventArgs("DoExport"));
-            }
-        }
-
-        public int ObjectAlignment
-        {
-            get { return alignment; }
-            set
-            {
-                alignment = value;
-                InvokePropertyChanged(new PropertyChangedEventArgs("ObjectAlignment"));
             }
         }
 
@@ -215,7 +295,6 @@ namespace LidomaCard
             }
         }
 
-
         public FontStyle Style
         {
             get
@@ -227,68 +306,6 @@ namespace LidomaCard
                 style = value;
             }
         }
-        public virtual void print(DrawArea drawArea,Graphics g, int j,bool border)
-        {
-        }
-        public virtual void onKeyPress(DrawArea drawArea,KeyPressEventArgs e)
-        {
-
-        }
-        public virtual void OnMouseDown(DrawArea drawArea, MouseEventArgs e)
-        {
-
-        }
-        public virtual void OnMouseUp(DrawArea drawArea, MouseEventArgs e)
-        {
-
-        }
-        public virtual void OnMouseMove(DrawArea drawArea, MouseEventArgs e)
-        {
-
-        }
-        public virtual void OnKeyDown(DrawArea drawArea, KeyEventArgs e)
-        {
-
-        }
-        public virtual void Draw(DrawArea drawArea, System.Drawing.Graphics g, float zoom)
-        {
-
-        }
-      
-
-
-        public virtual int HitTest(Point point)
-        {
-            return 1;
-        }
-        public virtual string name()
-        {
-            return "lodoma";
-        }
-        public object Clone()
-        {
-            return this.MemberwiseClone();
-
-        }
-        #region aline
-        public void CenterScreenObject(DrawArea area)
-        {
-            X = area.Width / 2 - Width / 2;
-        }
-
-        public void RightScreenObject(DrawArea area)
-        {
-            X = area.Width - 30 - Width;
-        }
-
-        public void LeftScreenObject(DrawArea area)
-        {
-            X = 30;
-        }
-
-        #endregion
-
-        #region propertis
 
         public int Width
         {
@@ -357,8 +374,6 @@ namespace LidomaCard
                 InvokePropertyChanged(new PropertyChangedEventArgs("FreezeLabelNumber"));
             }
         }
-
-       
 
         public int Rotate
         {
@@ -516,6 +531,7 @@ namespace LidomaCard
         }
         #endregion
 
+        //اینترفیس برای این که وقتی یکی از خصوصیات شی تغییر کرد یک ایونت تولید شود 
         #region interface function
 
         [field: NonSerialized()]
