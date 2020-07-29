@@ -95,7 +95,7 @@ namespace LidomaCard
                     }
                     g.DrawEllipse(Pens.Blue, RotatePoint.X, RotatePoint.Y, 5, 5);
                 }
-
+                // وقتی خصوصیت ترنسپرنت شی ترو باشد این قسمت اجرا میشود  
                 #region transparent
                 if (Transparent)
                 {

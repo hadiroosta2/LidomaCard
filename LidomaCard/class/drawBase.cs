@@ -93,10 +93,13 @@ namespace LidomaCard
             return 1;
         }
 
+        // برای این که از خود شی نام ان را بپرسیم
         public virtual string name()
         {
             return "lodoma";
         }
+
+        // برای کپی گرفتن از شی 
         public object Clone()
         {
             return this.MemberwiseClone();
@@ -104,6 +107,7 @@ namespace LidomaCard
         }
 
         //جهت تراز بندی شی روی صفحه رسم 
+
         #region aline
         public void CenterScreenObject(DrawArea area)
         {
