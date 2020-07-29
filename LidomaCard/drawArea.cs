@@ -413,15 +413,15 @@ namespace LidomaCard
 
         private void DrawArea_MouseMove(object sender, MouseEventArgs e)
         {
-            
-            //if (graphicList.SelectionCount > 0)
-            //{
-            //    foreach (drawBase o in GraphicList.selection)
-            //    {
-            //        o.OnMouseMove(this, e);
-            //        //hasChenge = true;
-            //    }
-            //}
+
+            if (graphicList.SelectionCount > 0)
+            {
+                foreach (drawBase o in GraphicList.selection)
+                {
+                    o.OnMouseMove(this, e);
+                    //hasChenge = true;
+                }
+            }
         }
 
         private void DrawArea_MouseUp(object sender, MouseEventArgs e)
